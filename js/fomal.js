@@ -3174,10 +3174,10 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://c-ssl.dtstatic.com/uploads/blog/202012/27/20201227130308_504fc.thumb.1000_0.png);
-    --darkmode-bg:url(https://c-ssl.dtstatic.com/uploads/blog/202012/27/20201227130308_504fc.thumb.1000_0.png);
-    --mobileday-bg: url(https://c-ssl.dtstatic.com/uploads/blog/202012/27/20201227130308_504fc.thumb.1000_0.png);
-    --mobilenight-bg: url(https://c-ssl.dtstatic.com/uploads/blog/202012/27/20201227130308_504fc.thumb.1000_0.png);
+    --default-bg: url(https://c-ssl.duitang.com/uploads/blog/202012/27/20201227130309_5a00a.png);
+    --darkmode-bg:url(https://c-ssl.duitang.com/uploads/blog/202012/27/20201227130309_5a00a.png);
+    --mobileday-bg: url(https://c-ssl.duitang.com/uploads/blog/202012/27/20201227130309_5a00a.png);
+    --mobilenight-bg: url(https://c-ssl.duitang.com/uploads/blog/202012/27/20201227130309_5a00a.png);
   }`;
 }
 // 切换背景主函数
