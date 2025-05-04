@@ -54,7 +54,7 @@ function tonav() {
     position = scroll;
   });
   //修复没有弄右键菜单的童鞋无法回顶部的问题
-  document.getElementById("page-name").innerText = document.title.split(" | 孙Jiahao")[0];
+  document.getElementById("page-name").innerText = document.title.split(" | Fomalhaut🥝")[0];
 }
 
 function scrollToTop() {
@@ -1119,15 +1119,15 @@ function createtime1() {
   var dnum = Math.floor(days);
 
   var ascll = [
-    `欢迎来到孙Jiahaoの小家!`,
+    `欢迎来到Fomalhaut🥝の小家!`,
     `Future is now 🍭🍭🍭`,
     `
         
-  ███████               ██████████               ██      ██
-  ██                        ██                   ██      ██
-  ███████                   ██                   ██████████
-       ██              ██   ██                   ██      ██
-  ███████                █████                   ██      ██
+███████  ██████  ███    ███  █████  ██      ██   ██  █████  ██    ██ ████████ 
+██      ██    ██ ████  ████ ██   ██ ██      ██   ██ ██   ██ ██    ██    ██    
+█████   ██    ██ ██ ████ ██ ███████ ██      ███████ ███████ ██    ██    ██    
+██      ██    ██ ██  ██  ██ ██   ██ ██      ██   ██ ██   ██ ██    ██    ██    
+██       ██████  ██      ██ ██   ██ ███████ ██   ██ ██   ██  ██████     ██   
                                               
 `,
     "小站已经苟活",
@@ -1172,7 +1172,7 @@ function createtime2() {
   setTimeout(
     console.warn.bind(
       console,
-      "%c ⚡ Powered by 孙Jiahao %c 你正在访问孙Jiahaoの小家",
+      "%c ⚡ Powered by Fomalhaut🥝 %c 你正在访问Fomalhaut🥝の小家",
       "color:white; background-color:#f0ad4e",
       ""
     )
@@ -1282,8 +1282,8 @@ function share_() {
   try {
     // 截取标题
     var title = document.title;
-    var subTitle = title.endsWith("| 孙Jiahao") ? title.substring(0, title.length - 14) : title;
-    navigator.clipboard.writeText('孙Jiahao的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');
+    var subTitle = title.endsWith("| Fomalhaut🥝") ? title.substring(0, title.length - 14) : title;
+    navigator.clipboard.writeText('Fomalhaut🥝的站内分享\n标题：' + subTitle + '\n链接：' + url + '\n欢迎来访！🍭🍭🍭');
     new Vue({
       data: function () {
         this.$notify({
@@ -2785,11 +2785,11 @@ var now = new Date();
 function createtime() {
   // 当前时间
   now.setTime(now.getTime() + 1000);
-  var start = new Date("08/05/2022 00:00:00"); // 旅行者1号开始计算的时间
+  var start = new Date("08/01/2022 00:00:00"); // 旅行者1号开始计算的时间
   var dis = Math.trunc(23400000000 + ((now - start) / 1000) * 17); // 距离=秒数*速度 记住转换毫秒
   var unit = (dis / 149600000).toFixed(6);  // 天文单位
   // 网站诞生时间
-  var grt = new Date("04/05/2025 00:00:00");
+  var grt = new Date("08/09/2022 00:00:00");
   var days = (now - grt) / 1e3 / 60 / 60 / 24,
     dnum = Math.floor(days),
     hours = (now - grt) / 1e3 / 60 / 60 - 24 * dnum,
@@ -2986,7 +2986,7 @@ function setUniverse() {
 
 // 雪花开关
 if (localStorage.getItem("snow") == undefined) {
-  localStorage.setItem("snow", "none");
+  localStorage.setItem("snow", "block");
 }
 document.getElementById("snow").style.display = localStorage.getItem("snow");
 function setSnow() {
@@ -3174,10 +3174,10 @@ if (localStorage.getItem("blogbg") != undefined) {
   setBg(localStorage.getItem("blogbg"));
 } else {
   document.getElementById("defineBg").innerText = `:root{
-    --default-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/dm14.webp);
-    --darkmode-bg:url(https://lskypro.acozycotage.net/Fomalhaut/img/yuanshen1.webp);
-    --mobileday-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/snow.webp);
-    --mobilenight-bg: url(https://lskypro.acozycotage.net/Fomalhaut/img/mb8.webp);
+    --default-bg: url(https://c-ssl.dtstatic.com/uploads/blog/202012/27/20201227130308_504fc.thumb.1000_0.png);
+    --darkmode-bg:url(https://c-ssl.dtstatic.com/uploads/blog/202012/27/20201227130308_504fc.thumb.1000_0.png);
+    --mobileday-bg: url(https://c-ssl.dtstatic.com/uploads/blog/202012/27/20201227130308_504fc.thumb.1000_0.png);
+    --mobilenight-bg: url(https://c-ssl.dtstatic.com/uploads/blog/202012/27/20201227130308_504fc.thumb.1000_0.png);
   }`;
 }
 // 切换背景主函数
