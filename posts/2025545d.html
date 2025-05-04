@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Markdown语法与外挂标签写法汇总 | Fomalhaut🥝</title>
+    <meta name="keywords" content="Markdown,外挂标签">
+    <meta name="author" content="Fomalhaut🥝">
+    <meta name="copyright" content="Fomalhaut🥝">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="theme-color" content="ffffff">
+    <meta name="description" content="本文汇总Markdown格式以及外挂标签在网页端的渲染效果，可作为文档进行查询">
+    <!-- Open Graph Meta -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Markdown语法与外挂标签写法汇总">
+    <meta property="og:url" content="https://www.fomal.cc/posts/2025545d.html">
+    <meta property="og:site_name" content="Fomalhaut퀴">
+    <meta property="og:description" content="本文汇总Markdown格式以及外挂标签在网页端的渲染效果，可作为文档进行查询">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:image" content="https://source.fomal.cc/img/default_cover_14.webp">
+    <meta property="article:published_time" content="2024-08-09T10:19:03.000Z">
+    <meta property="article:modified_time" content="2024-10-23T14:00:00.000Z">
+    <meta property="article:author" content="Fomalhaut퀴">
+    <meta property="article:tag" content="Markdown">
+    <meta property="article:tag" content="外挂标签">
+    <!-- Twitter Card Meta -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://source.fomal.cc/img/default_cover_14.webp">
+    <link rel="shortcut icon" href="/">
+    <link rel="canonical" href="https://www.fomal.cc/posts/2025545d">
+    <link rel="preconnect" href="//cdn.jsdelivr.net">
+    <link rel="preconnect" href="//busuanzi.ibruce.info">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="https://lf6-cdn-tos.bytecdntp.com/cdn/expire-1-M/font-awesome/6.0.0/css/all.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/fancyapps-ui/4.0.31/fancybox.min.css" media="print" onload="this.media='all'">
+    <script>
+        const GLOBAL_CONFIG = {
+            root: '/',
+            algolia: undefined,
+            localSearch: {"path":"/search.xml","preload":true,"languages":{"hits_empty":"找不到您查询的内容：${query}"}},
+            translate: undefined,
+            noticeOutdate: {"limitDay":365,"position":"top","messagePrev":"It has been","messageNext":"days since the last update, the content of the article may be outdated."},
+            highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":230},
+            copy: {
+                success: '复制成功',
+                error: '复制错误',
+                noSupport: '浏览器不支持'
+            },
+            relativeDate: {
+                homepage: true,
+                post: true
+            },
+            runtime: '',
+            date_suffix: {
+                just: '刚刚',
+                min: '分钟前',
+                hour: '小时前',
+                day: '天前',
+                month: '个月前'
+            },
+            copyright: undefined,
+            lightbox: 'fancybox',
+            Snackbar: undefined,
+            source: {
+                justifiedGallery: {
+                    js: 'https://cdnjs.cloudflare.com/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.js',
+                    css: 'https://cdnjs.cloudflare.com/ajax/libs/flickr-justified-gallery/2.1.2/fjGallery.min.css'
+                }
+            },
+            isPhotoFigcaption: false,
+            islazyload: true,
+            isAnchor: false
+        }
+    </script>
+    <script id="config-diff">
+        var GLOBAL_CONFIG_SITE = {
+            title: 'Markdown语法与外挂标签写法汇总',
+            isPost: true,
+            isHome: false,
+            isHighlightShrink: false,
+            isToc: true,
+            postUpdate: '2022-10-23 22:00:00'
+        }
+    </script>
+    <noscript>
+        <style type="text/css">
+            #nav {
+                opacity: 1
+            }
+            .justified-gallery img {
+                opacity: 1
+            }
+            #recent-posts time,
+            #post-meta time {
+                display: inline !important
+            }
+        </style>
+    </noscript>
+    <script>
+        (win=>{
+            win.saveToLocal = {
+                set: function setWithExpiry(key, value, ttl) {
+                    if (ttl === 0) return
+                    const now = new Date()
+                    const expiryDay = ttl * 86400000
+                    const item = {
+                        value: value,
+                        expiry: now.getTime() + expiryDay,
+                    }
+                    localStorage.setItem(key, JSON.stringify(item))
+                },
+                get: function getWithExpiry(key) {
+                    const itemStr = localStorage.getItem(key)
+                    if (!itemStr) {
+                        return undefined
+                    }
+                    const item = JSON.parse(itemStr)
+                    const now = new Date()
+                    if (now.getTime() > item.expiry) {
+                        localStorage.removeItem(key)
+                        return undefined
+                    }
+                    return item.value
+                }
+            }
+            win.getScript = url => new Promise((resolve, reject) => {
+                const script = document.createElement('script')
+                script.src = url
+                script.async = true
+                script.onerror = reject
+                script.onload = script.onreadystatechange = function() {
+                    const loadState = this.readyState
+                    if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+                    script.onload = script.onreadystatechange = null
+                    resolve()
+                }
+                document.head.appendChild(script)
+            })
+            win.activateDarkMode = function () {
+                document.documentElement.setAttribute('data-theme', 'dark')
+                if (document.querySelector('meta[name="theme-color"]') !== null) {
+                    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+                }
+            }
+            win.activateLightMode = function () {
+                document.documentElement.setAttribute('data-theme', 'light')
+                if (document.querySelector('meta[name="theme-color"]') !== null) {
+                    document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
+                }
+            }
+            const t = saveToLocal.get('theme')
+            if (t === undefined) {
+                const now = new Date()
+                const hour = now.getHours()
+                const isNight = hour <= 6 || hour >= 18
+                isNight ? activateDarkMode() : activateLightMode()
+            } else if (t === 'light') {
+                activateLightMode()
+            } else {
+                activateDarkMode()
+            }
+            const asideStatus = saveToLocal.get('aside-status')
+            if (asideStatus !== undefined) {
+                if (asideStatus === 'hide') {
+                    document.documentElement.classList.add('hide-aside')
+                } else {
+                    document.documentElement.classList.remove('hide-aside')
+                }
+            }
+            win.detectApple = () => {
+                if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+                    document.documentElement.classList.add('apple')
+                }
+            }
+            detectApple()
+        })(window)
+    </script>
+    <link rel="stylesheet" href="https://cdn1.tianli0.top/npm/element-ui@2.15.6/packages/theme-chalk/lib/index.css">
+    <style id="themeColor"></style>
+    <style id="rightSide"></style>
+    <style id="transPercent"></style>
+    <style id="blurNum"></style>
+    <style id="settingStyle"></style>
+    <span id="fps"></style>
+    <!-- hexo injector head_end start -->
+    <link rel="stylesheet" href="https://npm.elemecdn.com/hexo-butterfly-swiper/lib/swiper.min.css" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="https://npm.elemecdn.com/hexo
